@@ -1,9 +1,24 @@
 /* Bordered form */
-form {
+.container {
     border: 3px solid #f1f1f1;
     max-width: 400px;
-    margin: 0 auto;
     padding: 20px;
+    background-image: linear-gradient(to bottom, #1E1E1E, #656772);
+    border-radius: 10px;
+    color: white;
+}
+
+.cont {
+    border: 3px solid #f1f1f1;
+    max-width: 400px;
+    padding: 20px;
+    background-image: linear-gradient(to bottom, #1E1E1E, #656772);
+    border-radius: 10px;
+    color: white;
+    position: absolute; /* Position the container absolutely */
+    left: 0; /* Align to the left side */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Offset the container by half its height */
 }
 
 /* Full-width inputs */
@@ -15,6 +30,9 @@ input[type="password"] {
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
 }
 
 /* Set a style for the login button */
@@ -26,6 +44,7 @@ button {
     border: none;
     cursor: pointer;
     width: 100%;
+    border-radius: 5px;
 }
 
 /* Add a hover effect for buttons */
@@ -33,16 +52,10 @@ button:hover {
     opacity: 0.8;
 }
 
-/* Center the avatar image inside this container */
-.imgcontainer {
-    text-align: center;
+/* Center the login text */
+.logintextbox {
+    text-align: start;
     margin: 24px 0 12px 0;
-}
-
-/* Avatar image */
-img.avatar {
-    width: 40%;
-    border-radius: 50%;
 }
 
 /* Add padding to containers */
@@ -50,13 +63,35 @@ img.avatar {
     padding: 16px;
 }
 
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-    span.psw {
-        display: block;
-        float: none;
-    }
-    .cancelbtn {
-        width: 100%;
-    }
+/* Social login buttons */
+.social-login button {
+    position: relative;
+    padding-left: 50px;
+    flex: 1;
+    max-width: 140px; /* Adjust as needed */
+}
+
+/* SVG icon styles */
+.social-login img {
+    position: absolute;
+    left: 10px; 
+    top: 50%;
+    transform: translateY(-50%);
+    width: 34px;
+    height: auto;
+    margin-right: 8px;
+}
+
+.social-login {
+    display: flex;
+    justify-content: center; 
+    gap: 10px; 
+}
+
+.google-btn {
+    background-color: #ffffff; 
+}
+
+.facebook-btn {
+    background-color: #ffffff;
 }

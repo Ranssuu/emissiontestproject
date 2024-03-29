@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <link rel="stylesheet" href="CSS/LOGIN.css">
+    <link rel="stylesheet" href="CSS/login.css">
 </head>
 <body>
     <div class="container">
+        <div class="logintextbox">
+            <h2>Login to your account</h2>
+        </div>
         <form action="action_page.php" method="post">
-            <div class="imgcontainer">
-                <a2>Login to your account</a2>
-            </div>
             <div class="form-group">
                 <label for="uname"><b>Username</b></label>
                 <input type="text" placeholder="Enter Username" name="uname" required>
@@ -21,10 +21,16 @@
                 <input type="password" placeholder="Enter Password" name="psw" required>
             </div>
             <button type="submit">Login</button>
-            <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
-            </label>
         </form>
+        <!-- Social login buttons with SVG icons -->
+        <div class="social-login">
+            <button class="google-btn">
+                <img src="imgs/Google.svg" alt="Google">
+            </button>
+            <button class="facebook-btn">
+                <img src="imgs/facebook.svg" alt="Facebook">
+            </button>
+        </div>
     </div>
 </body>
 </html>
