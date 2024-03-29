@@ -6,6 +6,12 @@
     <title>Login Page</title>
     <link rel="stylesheet" href="CSS/login.css">
 </head>
+    <style>
+        body {
+            background-image: linear-gradient(to bottom, #000000, #FFFFFF); 
+            margin: 0;
+        }
+    </style>
 <body>
     <div class="container">
         <div class="logintextbox">
@@ -22,7 +28,9 @@
             </div>
             <button type="submit">Login</button>
         </form>
-        <!-- Social login buttons with SVG icons -->
+        <div class="textbox1">
+            <a>Or continue with</a>
+        </div>
         <div class="social-login">
             <button class="google-btn">
                 <img src="imgs/Google.svg" alt="Google">
@@ -30,6 +38,9 @@
             <button class="facebook-btn">
                 <img src="imgs/facebook.svg" alt="Facebook">
             </button>
+        </div>
+        <div class="registertextbox">
+            <a>Don't have an account yet?</a><a href=""> Register</a>
         </div>
     </div>
 </body>

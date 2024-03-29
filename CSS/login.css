@@ -1,27 +1,32 @@
-/* Bordered form */
+@font-face {
+    font-family: 'interreg';
+    src: url('font/interreg.ttf') format('ttf');
+}
+
+body {
+    font-family: 'interreg', sans-serif; 
+}
+
+
+h1, h2, h3, p, a {
+    font-family: 'interreg', sans-serif; /* Apply YourFont to headings and paragraphs */
+}
+
+
 .container {
     border: 3px solid #f1f1f1;
-    max-width: 400px;
-    padding: 20px;
+    width: 600px;
+    min-width: 600px;
+    padding: 40px;
     background-image: linear-gradient(to bottom, #1E1E1E, #656772);
-    border-radius: 10px;
+    border-radius: 50px;
     color: white;
+    position: absolute; 
+    left: 20px;
+    top: 50%; 
+    transform: translateY(-50%); 
 }
 
-.cont {
-    border: 3px solid #f1f1f1;
-    max-width: 400px;
-    padding: 20px;
-    background-image: linear-gradient(to bottom, #1E1E1E, #656772);
-    border-radius: 10px;
-    color: white;
-    position: absolute; /* Position the container absolutely */
-    left: 0; /* Align to the left side */
-    top: 50%; /* Center vertically */
-    transform: translateY(-50%); /* Offset the container by half its height */
-}
-
-/* Full-width inputs */
 input[type="text"],
 input[type="password"] {
     width: 100%;
@@ -30,14 +35,13 @@ input[type="password"] {
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
-    background-color: #333;
-    color: white;
+    background-color: #7A8394;
+    color: #1E1E1E;
     border-radius: 5px;
 }
 
-/* Set a style for the login button */
 button {
-    background-color: #04AA6D;
+    background-color: #030385;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -47,37 +51,38 @@ button {
     border-radius: 5px;
 }
 
-/* Add a hover effect for buttons */
+button[type="submit"] {
+    font-weight: bold; 
+    font-size: 16px; 
+}
+
+
 button:hover {
     opacity: 0.8;
 }
 
-/* Center the login text */
 .logintextbox {
     text-align: start;
     margin: 24px 0 12px 0;
 }
 
-/* Add padding to containers */
 .form-group {
     padding: 16px;
 }
 
-/* Social login buttons */
 .social-login button {
     position: relative;
     padding-left: 50px;
     flex: 1;
-    max-width: 140px; /* Adjust as needed */
+    max-width: 140px;
 }
 
-/* SVG icon styles */
 .social-login img {
     position: absolute;
-    left: 10px; 
+    left: 50px; 
     top: 50%;
     transform: translateY(-50%);
-    width: 34px;
+    width: 25px;
     height: auto;
     margin-right: 8px;
 }
@@ -88,10 +93,34 @@ button:hover {
     gap: 10px; 
 }
 
-.google-btn {
+.google-btn,
+.facebook-btn {
     background-color: #ffffff; 
+    max-width: fit-content;
+    padding: 20px;
 }
 
-.facebook-btn {
-    background-color: #ffffff;
+.textbox1, 
+.registertextbox {
+    text-align: center;
+    padding: 8px;
+}
+
+.registertextbox a {
+    text-decoration: none;
+    color: inherit; 
+    transition: color 0.3s;
+}
+
+.registertextbox a[href]:hover {
+    color: #FFF;
+}
+
+.registertextbox a:first-child {
+    font-weight: normal; 
+}
+
+.registertextbox a[href] {
+    font-weight: bold; 
+    color: #3B8EEA;
 }
