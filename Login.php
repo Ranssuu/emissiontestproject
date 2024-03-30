@@ -20,6 +20,7 @@
                 <div class="form-group">
                     <label for="psw"><b>Password</b></label>
                     <input type="password" placeholder="Enter Password" name="psw" required>
+                    <a href="#" class="forgot-password">Forgot Password?</a>
                 </div>
                 <button type="submit">Login</button>
             </form>
@@ -35,7 +36,7 @@
                 </button>
             </div>
             <div class="registertextbox">
-                <a>Don't have an account yet?</a><a href=""> Register</a>
+                <a>Don't have an account yet? </a><a href="#">Register</a>
             </div>
         </div>
         <div class="logocontainer">
