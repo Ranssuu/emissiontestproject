@@ -42,7 +42,7 @@
         <div class="logocontainer">
             <div class="logo">
                 <div class="logotextbox">
-                    <h2>IOT Emission Test</h2>
+                    <h2>Iot Emission Test</h2>
                 </div>
                 <div class="logoimg">
                     <img src="imgs/Logo.svg" alt="IOT Emission Test">

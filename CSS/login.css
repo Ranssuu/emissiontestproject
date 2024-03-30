@@ -146,7 +146,7 @@ button:hover {
 }
 
 .registertextbox a[href]:hover {
-    color: #3B8EEA;
+    color: #0505d4;
     text-decoration: underline;
 }
 
@@ -155,6 +155,7 @@ button:hover {
 }
 
 .registertextbox a[href] {
+    color: #3180F7;
     font-weight: bold; 
 }
 
