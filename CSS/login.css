@@ -131,6 +131,9 @@ button:hover {
     flex-direction: column;
     align-items: center;
 }
+.logincontainer{
+    left: 10px;
+}
 
 .logotextbox {
     font-size: 32px;
