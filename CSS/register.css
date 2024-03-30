@@ -50,19 +50,22 @@ h1, h2, h3, p, a {
 .form-container input[type="password"],
 .form-container input[type="email"],
 .form-container input[type="tel"] {
+    background-color: transparent;
     padding: 15px;
     font-size: 18px;
     margin-bottom: 10px;
     border: none;
-    border-radius: 4px;
+    border-bottom: 2px solid #fff;
+    border-radius: 2px solid #fff;
+    color: #fff;
 }
 
-.form-container .terms {
-    margin: 10px 0;
-}
-
-.form-container .terms input[type="checkbox"] {
-    margin-right: 10px;
+.form-container input[type="text"]:focus,
+.form-container input[type="password"]:focus,
+.form-container input[type="email"]:focus,
+.form-container input[type="tel"]:focus {
+    outline: none; 
+    border-bottom: 2px solid #3180F7; 
 }
 
 .form-container button {

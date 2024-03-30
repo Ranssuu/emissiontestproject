@@ -17,10 +17,6 @@
                 <input type="tel" id="phone" name="phone" placeholder="Phone Number">
                 <input type="password" id="password" name="password" placeholder="Password" required>
                 <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
-                <div class="terms">
-                    <input type="checkbox" id="terms" name="terms" required>
-                    <label for="terms">I have read and agreed to the Terms of Service and Privacy Policy.</label>
-                </div>
                 <button type="submit">Create Account</button>
             </form>
             <div class="social-signup">
