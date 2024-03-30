@@ -12,19 +12,20 @@ h1, h2, h3, p, a {
     font-family: 'interreg', sans-serif;
 }
 
-
 .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logincontainer {
     border: 3px solid #f1f1f1;
-    width: 600px;
+    width: 50%;
     min-width: 600px;
     padding: 40px;
-    background-image: linear-gradient(to bottom, #1E1E1E, #656772);
+    background-image: linear-gradient(to bottom, #020405, #3D3F4A);
     border-radius: 50px;
     color: white;
-    position: absolute; 
-    left: 20px;
-    top: 50%; 
-    transform: translateY(-50%); 
+    position: relative; 
 }
 
 input[type="text"],
@@ -113,7 +114,7 @@ button:hover {
 }
 
 .registertextbox a[href]:hover {
-    color: #FFF;
+    color: #030385;
 }
 
 .registertextbox a:first-child {
@@ -123,4 +124,16 @@ button:hover {
 .registertextbox a[href] {
     font-weight: bold; 
     color: #3B8EEA;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logotextbox {
+    font-size: 32px;
+    color: #FFF;
+    margin-bottom: 10px;
 }
