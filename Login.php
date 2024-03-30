@@ -6,12 +6,6 @@
     <title>Login Page</title>
     <link rel="stylesheet" href="CSS/login.css">
 </head>
-    <style>
-        body {
-            background-image: linear-gradient(to bottom, #1E1E1E, #666872); 
-            margin: 0;
-        }
-    </style>
 <body>
     <div class="container">
         <div class="logincontainer">

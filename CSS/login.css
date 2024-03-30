@@ -5,6 +5,8 @@
 
 body {
     font-family: 'interreg', sans-serif; 
+    background-image: linear-gradient(to bottom, #1E1E1E, #666872); 
+    margin: 0;
 }
 
 
@@ -14,19 +16,24 @@ h1, h2, h3, p, a {
 
 .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .logincontainer {
-    border: 3px solid #f1f1f1;
-    width: 50%;
-    min-width: 600px;
-    padding: 40px;
+    border: 3px;
+    width: 500px;
+    height: 600px;
+    padding: 40px 20px;
     background-image: linear-gradient(to bottom, #020405, #3D3F4A);
     border-radius: 50px;
     color: white;
     position: relative; 
+    right: 20px;
 }
+
+
 
 input[type="text"],
 input[type="password"] {
@@ -130,9 +137,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.logincontainer{
-    left: 10px;
+    margin-left: 20px;
 }
 
 .logotextbox {
