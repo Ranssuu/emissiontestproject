@@ -17,25 +17,25 @@
     <div class="menu-section">
       <span class="section-title">Menu</span>
       <ul>
-        <li class="active" href="#"><i class="fas fa-tachometer-alt"></i><a>Dashboard</a></li>
-        <li href="#"><i class="fas fa-info-circle"></i><a>User Information</a></li>
-        <li href="#"><i class="fas fa-print"></i><a>Print Result</a></li>
-        <li href="#"><i class="fas fa-eye"></i><a>Customer View</a></li>
+        <li class="active"><a href="#"><i class="fas fa-tachometer-alt"></i>Dashboard</a></li>
+        <li><a href="#"><i class="fas fa-info-circle"></i><a>User Information</a></li>
+        <li><a href="#"><i class="fas fa-print"></i>Print Result</a></li>
+        <li><a href="#"><i class="fas fa-eye"></i>Customer View</a></li>
       </ul>
     </div>
     <div class="other-section">
       <span class="section-title">Others</span>
       <ul>
-        <li href="#"><i class="fas fa-cog"></i><a>Settings</a></li>
-        <li href="#"><i class="fas fa-user-alt"></i><a>Account</a></li>
-        <li href="#"><i class="fas fa-question-circle"></i><a>Help</a></li>
+        <li><a href="#"><i class="fas fa-cog"></i>Settings</a></li>
+        <li><a href="#"><i class="fas fa-user-alt"></i>Account</a></li>
+        <li><a href="#"><i class="fas fa-question-circle"></i>Help</a></li>
       </ul>
     </div>
   </div>
 
   <!-- Content Area -->
   <div class="content">
-    <h1>Welcome to the Admin Dashboard</h1>
+    <h1>Dashboard</h1>
     <p>This is where you can manage users, view emissions data, and adjust settings.</p>
     <p>Start by selecting an option from the sidebar.</p>
   </div>
