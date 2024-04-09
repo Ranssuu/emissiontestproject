@@ -18,7 +18,7 @@
       <span class="section-title">Menu</span>
       <ul>
         <li><a href="home.php"><i class="fas fa-tachometer-alt"></i>Dashboard</a></li>
-        <li class="active"><a href="#"><i class="fas fa-info-circle"></i><a>User Information</a></li>
+        <li class="active"><a href="#"><i class="fas fa-info-circle"></i>User Information</a></li>
         <li><a href="#"><i class="fas fa-print"></i>Print Result</a></li>
         <li><a href="#"><i class="fas fa-eye"></i>Customer View</a></li>
       </ul>
@@ -29,6 +29,7 @@
         <li><a href="#"><i class="fas fa-cog"></i>Settings</a></li>
         <li><a href="#"><i class="fas fa-user-alt"></i>Account</a></li>
         <li><a href="#"><i class="fas fa-question-circle"></i>Help</a></li>
+        <li><a href="#"><i class="fas fa-sign-out-alt"></i>Logout</a></li>
       </ul>
     </div>
   </div>
