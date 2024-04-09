@@ -18,7 +18,7 @@
       <span class="section-title">Menu</span>
       <ul>
         <li class="active"><a href="#"><i class="fas fa-tachometer-alt"></i>Dashboard</a></li>
-        <li><a href="#"><i class="fas fa-info-circle"></i><a>User Information</a></li>
+        <li><a href="userlist.php"><i class="fas fa-info-circle"></i><a>User Information</a></li>
         <li><a href="#"><i class="fas fa-print"></i>Print Result</a></li>
         <li><a href="#"><i class="fas fa-eye"></i>Customer View</a></li>
       </ul>
@@ -72,7 +72,7 @@
         <div class="charts">
 
           <div class="charts-card">
-            <h2 class="chart-title">Top 5 Products</h2>
+            <h2 class="chart-title">Top Belching Vehicle Type</h2>
             <div id="bar-chart"></div>
           </div>
 
@@ -86,7 +86,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
     <!-- Custom JS -->
-    <script src="js/scripts.js"></script>
+    <script src="JS/scripts.js"></script>
 
 </body>
 </html>

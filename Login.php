@@ -26,7 +26,7 @@
                 <button type="submit">Login</button>
             </form>
             <div class="registertextbox">
-                <a>Don't have an account yet? </a><a href="#">Register</a>
+                <a>Don't have an account yet? </a><a href="Register.php">Register</a>
             </div>
         </div>
         <div class="logocontainer">

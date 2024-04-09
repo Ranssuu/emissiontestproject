@@ -4,7 +4,7 @@ const barChartOptions = {
   series: [
     {
       data: [10, 8, 6, 4, 2], // Data points for the 'Products' series
-      name: 'Category',
+      name: ' ',
     },
   ],
   // Chart type and configurations
@@ -89,7 +89,6 @@ const barChartOptions = {
   // Y-axis configurations
   yaxis: {
     title: {
-      text: 'Count', // Title for the Y-axis
       style: {
         color: '#f5f7ff',
       },

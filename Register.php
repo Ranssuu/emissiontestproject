@@ -20,7 +20,7 @@
                 <button type="submit">Create Account</button>
             </form>
             <div class="login-link">
-                <p>Already have an account? <a href="login.html">Log In</a></p>
+                <p>Already have an account? <a href="Login.php">Log In</a></p>
             </div>
         </div>
         <div class="logo-container">
