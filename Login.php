@@ -25,17 +25,6 @@
                 </div>
                 <button type="submit">Login</button>
             </form>
-            <div class="textbox1">
-                <a>Or continue with</a>
-            </div>
-            <div class="social-login">
-                <button class="google-btn">
-                    <img src="imgs/Google.svg" alt="Google">
-                </button>
-                <button class="facebook-btn">
-                    <img src="imgs/facebook.svg" alt="Facebook">
-                </button>
-            </div>
             <div class="registertextbox">
                 <a>Don't have an account yet? </a><a href="#">Register</a>
             </div>

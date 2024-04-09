@@ -99,39 +99,6 @@ button:hover {
     padding: 16px;
 }
 
-.social-login button {
-    position: relative;
-    padding-left: 50px;
-    flex: 1;
-    max-width: 140px;
-}
-
-.social-login img {
-    position: absolute;
-    left: 50%; 
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 25px;
-    height: auto;
-    margin-right: 8px;
-}
-
-.social-login {
-    display: flex;
-    justify-content: center; 
-    gap: 10px; 
-}
-
-.google-btn,
-.facebook-btn {
-    background-color: #ffffff; 
-    height: 40px;
-    width: 60px;
-    padding: 10px;
-    font-size: 14px;
-}
-
-.textbox1, 
 .registertextbox {
     text-align: center;
     padding: 8px;

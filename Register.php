@@ -19,17 +19,6 @@
                 <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
                 <button type="submit">Create Account</button>
             </form>
-            <div class="social-signup">
-                <button class="google-btn">
-                    <img src="imgs/Google.svg" alt="Google">
-                    Signup using Google
-                </button>
-                <p>OR</p>
-                <button class="facebook-btn">
-                    <img src="imgs/facebook.svg" alt="Facebook">
-                    Signup using Facebook
-                </button>
-            </div>
             <div class="login-link">
                 <p>Already have an account? <a href="login.html">Log In</a></p>
             </div>

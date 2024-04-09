@@ -1,32 +1,13 @@
-// SIDEBAR TOGGLE
-
-let sidebarOpen = false;
-const sidebar = document.getElementById('sidebar');
-
-function openSidebar() {
-  if (!sidebarOpen) {
-    sidebar.classList.add('sidebar-responsive');
-    sidebarOpen = true;
-  }
-}
-
-function closeSidebar() {
-  if (sidebarOpen) {
-    sidebar.classList.remove('sidebar-responsive');
-    sidebarOpen = false;
-  }
-}
-
-// ---------- CHARTS ----------
-
 // BAR CHART
 const barChartOptions = {
+  // Data series for the bar chart
   series: [
     {
-      data: [10, 8, 6, 4, 2],
-      name: 'Products',
+      data: [10, 8, 6, 4, 2], // Data points for the 'Products' series
+      name: 'Category',
     },
   ],
+  // Chart type and configurations
   chart: {
     type: 'bar',
     background: 'transparent',
@@ -35,7 +16,9 @@ const barChartOptions = {
       show: false,
     },
   },
+  // Colors for the bars
   colors: ['#2962ff', '#d50000', '#2e7d32', '#ff6d00', '#583cb3'],
+  // Plot options for the bars
   plotOptions: {
     bar: {
       distributed: true,
@@ -44,6 +27,7 @@ const barChartOptions = {
       columnWidth: '40%',
     },
   },
+  // Other chart configurations
   dataLabels: {
     enabled: false,
   },
@@ -80,8 +64,9 @@ const barChartOptions = {
     intersect: false,
     theme: 'dark',
   },
+  // X-axis configurations
   xaxis: {
-    categories: ['Laptop', 'Phone', 'Monitor', 'Headphones', 'Camera'],
+    categories: ['Car', 'Truck', 'Bus', 'Trailer', 'Motorbike'], // Categories for the X-axis
     title: {
       style: {
         color: '#f5f7ff',
@@ -101,9 +86,10 @@ const barChartOptions = {
       },
     },
   },
+  // Y-axis configurations
   yaxis: {
     title: {
-      text: 'Count',
+      text: 'Count', // Title for the Y-axis
       style: {
         color: '#f5f7ff',
       },
@@ -124,24 +110,29 @@ const barChartOptions = {
   },
 };
 
+// Create a new instance of ApexCharts for the bar chart
 const barChart = new ApexCharts(
   document.querySelector('#bar-chart'),
   barChartOptions
 );
+
+// Render the bar chart
 barChart.render();
 
 // AREA CHART
 const areaChartOptions = {
+  // Data series for the area chart
   series: [
     {
-      name: 'Passed',
-      data: [31, 40, 28, 51, 42, 109, 100],
+      name: 'Passed', // Series name
+      data: [31, 40, 28, 51, 42, 109, 100], // Data points for the 'Passed' series
     },
     {
-      name: 'Failed',
-      data: [11, 32, 45, 32, 34, 52, 41],
+      name: 'Failed', // Series name
+      data: [11, 32, 45, 32, 34, 52, 41], // Data points for the 'Failed' series
     },
   ],
+  // Chart type and configurations
   chart: {
     type: 'area',
     background: 'transparent',
@@ -151,8 +142,11 @@ const areaChartOptions = {
       show: false,
     },
   },
+  // Colors for the areas
   colors: ['#00ab57', '#d50000'],
+  // Labels for the X-axis
   labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+  // Other chart configurations
   dataLabels: {
     enabled: false,
   },
@@ -194,6 +188,7 @@ const areaChartOptions = {
   stroke: {
     curve: 'smooth',
   },
+  // X-axis configurations
   xaxis: {
     axisBorder: {
       color: '#55596e',
@@ -210,10 +205,11 @@ const areaChartOptions = {
       },
     },
   },
+  // Y-axis configurations
   yaxis: [
     {
       title: {
-        text: 'Passed',
+        text: 'Passed', // Title for the first Y-axis
         style: {
           color: '#f5f7ff',
         },
@@ -227,7 +223,7 @@ const areaChartOptions = {
     {
       opposite: true,
       title: {
-        text: 'Failed',
+        text: 'Failed', // Title for the second Y-axis
         style: {
           color: '#f5f7ff',
         },
@@ -246,8 +242,11 @@ const areaChartOptions = {
   },
 };
 
+// Create a new instance of ApexCharts for the area chart
 const areaChart = new ApexCharts(
   document.querySelector('#area-chart'),
   areaChartOptions
 );
+
+// Render the area chart
 areaChart.render();
