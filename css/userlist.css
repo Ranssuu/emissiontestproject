@@ -139,7 +139,7 @@ body {
 
 .user-container {
   background-color: #313131;
-  height: 300px;
+  height: 480px;
   overflow-y: auto; /* Add scrollbar if content exceeds container height */
   margin-bottom: 20px; /* Add margin to create space */
 }
@@ -180,7 +180,7 @@ body {
 
 .vehicle-container {
   background-color: #313131;
-  height: 280px;
+  height: 200px;
   overflow-y: auto; /* Add scrollbar if content exceeds container height */
 }
 
