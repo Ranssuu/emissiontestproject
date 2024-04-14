@@ -17,7 +17,7 @@
     <div class="menu-section">
       <span class="section-title">Menu</span>
       <ul>
-        <li><a href="home.php"><i class="fas fa-tachometer-alt"></i>Dashboard</a></li>
+        <li><a href="home.html"><i class="fas fa-tachometer-alt"></i>Dashboard</a></li>
         <li class="active"><a href="#"><i class="fas fa-info-circle"></i>User Information</a></li>
         <li><a href="#"><i class="fas fa-print"></i>Print Result</a></li>
       </ul>
@@ -38,9 +38,94 @@
       <h2>USERLIST</h2>
        <!-- Search Bar -->
        <div class="search-bar">
-        <input type="text" id="searchInput" placeholder="Search...">
-        <button type="button" id="searchButton"><i class="fas fa-search"></i></button>
+        <input type="text" class="searchInput" placeholder="Search...">
+        <button type="button" class="searchButton"><i class="fas fa-search"></i></button>
       </div>
     </div>
+    <div class="user-container">
+      <table class="user-table">
+          <thead>
+              <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Date</th>
+                  <th>Vehicle Type</th>
+                  <th>Result</th>
+                  <th>History</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr class="user-row">
+                  <td>1</td>
+                  <td>John Doe</td>
+                  <td>2024-04-12</td>
+                  <td>Car</td>
+                  <td>Pass</td>
+                  <td class="history-data"><a href="#"><i class="fas fa-history"></i></a></td>
+              </tr>
+              <tr class="user-row">
+                <td>1</td>
+                <td>John Doe</td>
+                <td>2024-04-12</td>
+                <td>Car</td>
+                <td>Pass</td>
+                <td class="history-data"><a href="#"><i class="fas fa-history"></i></a></td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+    <div class="vehicle-container">
+      <table class="vehicle-table">
+        <thead>
+          <tr>
+            <th colspan="2">Personal Details</th>
+            <th colspan="4">Vehicle Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- First column of Details -->
+          <tr>
+            <td>Owner Name</td>
+            <td>Lance Tumala</td>
+            
+            <td>Plate No: </td>
+            <td>NEO 123</td>
+            <td>Make/Series:</td>
+            <td>TOYOTA RUSH</td>
+          </tr>
+          <!-- Second column of Details -->
+          <tr>
+            <td>Contact No.</td>
+            <td>09275410852</td>
+
+            <td>Engine No:</td>
+            <td>741025896321456987</td>
+            <td>MV Type:</td>
+            <td>Car</td>
+          </tr>
+          <!-- Third column of Details -->
+          <tr>
+            <td>Email</td>
+            <td>Lnztumala1@gmail.com</td>
+            
+            <td>Chassis NO:</td>
+            <td>1478523696321456987</td>
+            <td>Color:</td>
+            <td>Brown</td>
+          </tr>
+          <!-- Fourth column of Details -->
+          <tr>
+            <td>Date of Registration</td>
+            <td>10/12/2010</td>
+
+            <td>Year Model:</td>
+            <td>2010</td>
+            <td>Classification:</td>
+            <td>Private</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 </body>
 </html>
