@@ -11,7 +11,11 @@ body {
     height: 100vh;
 }
 
-h1, h2, h3, p, a {
+h1,
+h2,
+h3,
+p,
+a {
     font-family: 'Inter', sans-serif;
 }
 
@@ -22,7 +26,8 @@ h1, h2, h3, p, a {
     border-radius: 60px;
     overflow: hidden;
     display: flex;
-    flex-direction: row-reverse; /* Reverse the order of children */
+    flex-direction: row-reverse;
+    /* Reverse the order of children */
 }
 
 .form-container {
@@ -61,8 +66,8 @@ h1, h2, h3, p, a {
 .form-container input[type="password"]:focus,
 .form-container input[type="email"]:focus,
 .form-container input[type="tel"]:focus {
-    outline: none; 
-    border-bottom: 2px solid #3180F7; 
+    outline: none;
+    border-bottom: 2px solid #3180F7;
 }
 
 .form-container button {
@@ -99,7 +104,7 @@ h1, h2, h3, p, a {
 
 .logo-container {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     width: 50%;
     padding: 20px;
@@ -110,5 +115,5 @@ h1, h2, h3, p, a {
     font-size: 32px;
     color: #fff;
     margin-bottom: 10px;
-    text-align: center; 
+    text-align: center;
 }

@@ -1,14 +1,17 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 body {
     font-family: 'Inter', sans-serif;
-    background-image: linear-gradient(to bottom, #1E1E1E, #666872); 
+    background-image: linear-gradient(to bottom, #1E1E1E, #666872);
     margin: 0;
 }
 
 
-h1, h2, h3, p, a {
+h1,
+h2,
+h3,
+p,
+a {
     font-family: 'Inter', sans-serif;
 }
 
@@ -27,7 +30,7 @@ h1, h2, h3, p, a {
     background-image: linear-gradient(to bottom, #020405, #3D3F4A);
     border-radius: 50px;
     color: white;
-    position: relative; 
+    position: relative;
     right: 50px;
 }
 
@@ -50,8 +53,8 @@ input[type="password"] {
 
 input[type="text"]::placeholder,
 input[type="password"]::placeholder {
-    color: #222222; 
-    font-size: 16px; 
+    color: #222222;
+    font-size: 16px;
     font-weight: 500;
 }
 
@@ -59,7 +62,7 @@ input[type="password"]::placeholder {
     display: block;
     text-align: right;
     margin-top: 5px;
-    color: #ffffff; 
+    color: #ffffff;
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -81,8 +84,8 @@ button {
 }
 
 button[type="submit"] {
-    font-weight: bold; 
-    font-size: 16px; 
+    font-weight: bold;
+    font-size: 16px;
 }
 
 
@@ -106,7 +109,7 @@ button:hover {
 
 .registertextbox a {
     text-decoration: none;
-    color: inherit; 
+    color: inherit;
     transition: color 0.3s;
 }
 
@@ -116,12 +119,12 @@ button:hover {
 }
 
 .registertextbox a:first-child {
-    font-weight: normal; 
+    font-weight: normal;
 }
 
 .registertextbox a[href] {
     color: #3180F7;
-    font-weight: bold; 
+    font-weight: bold;
 }
 
 .logo {
