@@ -179,9 +179,6 @@ body {
 }
 
 .history-item {
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
     background-color: #444;
     color: #fff;
     padding: 10px;
