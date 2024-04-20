@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="CSS/history.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <i class="fas fa-user-circle fa-2x"></i>
+            <span class="user-name">USER</span>
+        </div>
+        <div class="menu-section">
+            <span class="section-title">Menu</span>
+            <ul>
+                <li><a href="Home.html"><i class="fas fa-tachometer-alt"></i>Dashboard</a></li>
+                <li class="active"><a href="#"><i class="fas fa-info-circle"></i>User Information</a></li>
+                <li><a href="#"><i class="fas fa-print"></i>Print Result</a></li>
+            </ul>
+        </div>
+        <div class="other-section">
+            <span class="section-title">Others</span>
+            <ul>
+                <li><a href="#"><i class="fas fa-cog"></i>Settings</a></li>
+                <li><a href="#"><i class="fas fa-user-alt"></i>Account</a></li>
+                <li><a href="#"><i class="fas fa-sign-out-alt"></i>Logout</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Content Area -->
+    <div class="main-content">
+        <div class="main-title">
+            <h2>History</h2>
+        </div>
+        <div class="vehicle-container">
+            <table class="vehicle-table">
+                <thead>
+                    <tr>
+                        <th colspan="2">Personal Details</th>
+                        <th colspan="4">Vehicle Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <!-- Personal Details -->
+                        <td>Owner Name</td>
+                        <td>Lance Tumala</td>
+                        <!-- Vehicle Details -->
+                        <td>Plate No:</td>
+                        <td>NEO 123</td>
+                        <td>Make/Series:</td>
+                        <td>TOYOTA RUSH</td>
+                    </tr>
+
+                    <tr>
+                        <!-- Personal Details -->
+                        <td>Contact No.</td>
+                        <td>023654788952</td>
+                        <!-- Vehicle Details -->
+                        <td>Engine No:</td>
+                        <td>741025896321456987</td>
+                        <td>MV Type:</td>
+                        <td>Car</td>
+                    </tr>
+
+                    <tr>
+                        <!-- Personal Details -->
+                        <td>Email</td>
+                        <td>Lanzester@gmail.com</td>
+                        <!-- Vehicle Details -->
+                        <td>Chassis NO:</td>
+                        <td>1478523696321456987</td>
+                        <td>Color:</td>
+                        <td>Brown</td>
+                    </tr>
+
+                    <tr>
+                        <!-- Personal Details -->
+                        <td>Date of Registration</td>
+                        <td>10/12/2010</td>
+                        <!-- Vehicle Details -->
+                        <td>Year Model:</td>
+                        <td>2010</td>
+                        <td>Classification:</td>
+                        <td>Private</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="charts">
+
+            <div class="charts-card">
+                <h2 class="chart-title">Monthly Emission Test</h2>
+                <div id="area-chart"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
+    <!-- Custom JS -->
+    <script src="JS/scripts.js"></script>
+</body>
+
+</html>

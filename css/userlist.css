@@ -203,7 +203,7 @@ body {
 
 .vehicle-container {
   background-color: #313131;
-  height: 200px;
+  height: auto;
   overflow-y: auto;
   /* Add scrollbar if content exceeds container height */
 }
@@ -215,7 +215,7 @@ body {
 
 .vehicle-table th,
 .vehicle-table td {
-  border: 1px solid transparent;
+  border: 1px solid #5A6ACF;
   /* Set border to transparent initially */
   text-align: left;
   padding: 8px;
@@ -223,31 +223,9 @@ body {
 
 .vehicle-table th {
   background-color: #313131;
-  border-bottom: 2px solid #5A6ACF;
+  border-bottom: 1px solid #5A6ACF;
   /* Add bottom border for header cells */
   text-align: center;
-  border-right: 2px solid #5A6ACF;
+  border-right: 1px solid #5A6ACF;
 }
 
-.vehicle-table td {
-  border-bottom: 2px solid #5A6ACF;
-  border-right: 2px solid #5A6ACF;
-  /* Add bottom border for data cells */
-}
-
-.vehicle-table th:first-child,
-.vehicle-table td:first-child {
-  border-left: none;
-  /* Remove left border for first column */
-}
-
-.vehicle-table th:last-child,
-.vehicle-table td:last-child {
-  border-right: none;
-  /* Remove right border for last column */
-}
-
-.vehicle-table td:last-child {
-  border-right: none;
-  /* Remove right border for last column */
-}

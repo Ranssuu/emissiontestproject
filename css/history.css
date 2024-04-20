@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #272727;
+}
+
+.sidebar {
+    background-color: #36353A;
+    color: #fff;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #fff;
+}
+
+.sidebar-header .fa-user-circle {
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.user-name {
+    font-size: 18px;
+}
+
+.menu-section,
+.other-section {
+    padding: 20px;
+}
+
+.section-title {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    color: gray;
+    cursor: pointer;
+}
+
+.sidebar ul li i {
+    margin-right: 10px;
+}
+
+.sidebar ul li.active {
+    background-color: #3C3C4A;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #797C8F;
+}
+
+.sidebar ul li:hover {
+    background-color: #444;
+}
+
+.other-section ul li {
+    padding: 10px;
+    color: gray;
+    cursor: pointer;
+}
+
+.other-section ul li i {
+    margin-right: 10px;
+}
+
+.other-section ul li a {
+    text-decoration: none;
+    color: #797C8F;
+}
+
+.main-content {
+    grid-area: main;
+    margin-left: 250px;
+    padding: 20px 20px;
+    color: #fff;
+}
+
+.main-content h1 {
+    font-size: 24px;
+}
+
+.vehicle-container {
+    background-color: #313131;
+    height: auto;
+    overflow-y: auto;
+}
+
+.vehicle-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.vehicle-table th,
+.vehicle-table td {
+    border: 1px solid #5A6ACF;
+    text-align: left;
+    padding: 8px;
+}
+
+.vehicle-table th {
+    background-color: #313131;
+    border-bottom: 1px solid #5A6ACF;
+    text-align: center;
+    border-right: 1px solid #5A6ACF;
+}
+
+.charts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 60px;
+}
+
+.charts-card {
+    background-color: #313131;
+    margin-bottom: 20px;
+    padding: 25px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
+}
+
+.chart-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
