@@ -148,3 +148,74 @@ body {
     justify-content: center;
 }
 
+/* Style for History Section */
+.history-section {
+    background-color: #313131;
+    padding: 25px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
+    height: 485px; /* Fixed height for the history section */
+    overflow: hidden; /* Hide overflow outside the history section */
+    scrollbar-width: thin; /* Show a scrollbar even if not needed */
+    scrollbar-color: #444444  #313131; /* Change scrollbar track and thumb colors */
+}
+
+.history-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.history-container {
+    max-height: 80%; /* Allow container to take full height of history section */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.history-list {
+    list-style: none;
+    padding: 0;
+}
+
+.history-item {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.history-item a{
+    justify-content: space-between;
+    display: flex;
+    
+}
+
+.history-item:hover {
+    background-color: #555;
+}
+
+.history-date {
+    padding: 0 10px; /* Add padding */
+    font-weight: bold;
+}
+
+.history-result {
+    padding: 0 10px; /* Add padding */
+    color: #00AB57; /* Green for passed, adjust as needed */
+}
+
+.history-item.failed .history-result {
+    color: #D50000; /* Red for failed, adjust as needed */
+}
+
+.history-item a {
+    text-decoration: none;
+    color: inherit; /* Optionally inherit the color from parent */
+}

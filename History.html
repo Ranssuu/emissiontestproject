@@ -96,23 +96,48 @@
             </table>
         </div>
         <div class="charts">
-
             <div class="charts-card">
                 <h2 class="chart-title">Monthly Emission Test</h2>
                 <div id="area-chart"></div>
             </div>
-
-            <div class="charts-card">
+            <div class="history-section">
                 <h2 class="history-title">History</h2>
-                <div id="arc-chart"></div>
+                <div class="history-container">
+                    <ul class="history-list">
+                        <li class="history-item passed">
+                            <a href="#">
+                                <span class="history-date">2024-04-12</span>
+                                <span class="history-result">Passed</span>
+                            </a>
+                        </li>
+                        <li class="history-item failed">
+                            <a href="#">
+                                <span class="history-date">2024-04-11</span>
+                                <span class="history-result">Failed</span>
+                            </a>
+                        </li>
+                        <li class="history-item failed">
+                            <a href="#">
+                                <span class="history-date">2024-04-11</span>
+                                <span class="history-result">Failed</span>
+                            </a>
+                        </li>
+                        <li class="history-item passed">
+                            <a href="#">
+                                <span class="history-date">2024-04-12</span>
+                                <span class="history-result">Passed</span>
+                            </a>
+                        </li>
+                        <!-- Add more list items as needed -->
+                    </ul>
+                </div>
             </div>
 
         </div>
-    </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
-    <!-- Custom JS -->
-    <script src="JS/history.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
+        <!-- Custom JS -->
+        <script src="JS/history.js"></script>
 </body>
 
 </html>
