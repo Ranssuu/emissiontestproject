@@ -195,3 +195,5 @@ const areaChart = new ApexCharts(
 
 // Render the area chart
 areaChart.render();
+
+
