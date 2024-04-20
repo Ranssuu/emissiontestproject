@@ -1,51 +1,26 @@
-// BAR CHART
-const barChartOptions = {
-  // Data series for the bar chart
-  series: [
-    {
-      data: [10, 8, 6, 4, 2], // Data points for the 'Products' series
-      name: ' ',
-    },
-  ],
+// PIE CHART
+const seriesData = [10, 8, 6, 4, 2]; // Data points for the pie chart
+const totalRegistered = seriesData.reduce((acc, curr) => acc + curr, 0); // Calculate total registered vehicles
+
+const pieChartOptions = {
+  // Data series for the pie chart
+  series: seriesData,
+  // Labels for each segment of the pie chart
+  labels: ['Car', 'Truck', 'Bus', 'Trailer', 'Motorbike'],
   // Chart type and configurations
   chart: {
-    type: 'bar',
+    type: 'pie',
     background: 'transparent',
     height: 350,
-    toolbar: {
-      show: false,
-    },
   },
-  // Colors for the bars
+  // Colors for the segments of the pie chart
   colors: ['#2962ff', '#d50000', '#2e7d32', '#ff6d00', '#583cb3'],
-  // Plot options for the bars
-  plotOptions: {
-    bar: {
-      distributed: true,
-      borderRadius: 4,
-      horizontal: false,
-      columnWidth: '40%',
-    },
-  },
   // Other chart configurations
   dataLabels: {
     enabled: false,
   },
   fill: {
     opacity: 1,
-  },
-  grid: {
-    borderColor: '#55596e',
-    yaxis: {
-      lines: {
-        show: true,
-      },
-    },
-    xaxis: {
-      lines: {
-        show: true,
-      },
-    },
   },
   legend: {
     labels: {
@@ -60,63 +35,34 @@ const barChartOptions = {
     width: 2,
   },
   tooltip: {
+    enabled: true,
     shared: true,
     intersect: false,
     theme: 'dark',
   },
-  // X-axis configurations
-  xaxis: {
-    categories: ['Car', 'Truck', 'Bus', 'Trailer', 'Motorbike'], // Categories for the X-axis
-    title: {
-      style: {
-        color: '#f5f7ff',
-      },
-    },
-    axisBorder: {
-      show: true,
-      color: '#55596e',
-    },
-    axisTicks: {
-      show: true,
-      color: '#55596e',
-    },
-    labels: {
-      style: {
-        colors: '#f5f7ff',
-      },
-    },
-  },
-  // Y-axis configurations
-  yaxis: {
-    title: {
-      style: {
-        color: '#f5f7ff',
-      },
-    },
-    axisBorder: {
-      color: '#55596e',
-      show: true,
-    },
-    axisTicks: {
-      color: '#55596e',
-      show: true,
-    },
-    labels: {
-      style: {
-        colors: '#f5f7ff',
+  // Custom output to display total registered vehicles
+  annotations: {
+    totalRegistered: {
+      label: {
+        text: `Total Registered: ${totalRegistered}`,
+        style: {
+          color: '#f5f7ff',
+          fontSize: '16px',
+        },
       },
     },
   },
 };
 
-// Create a new instance of ApexCharts for the bar chart
-const barChart = new ApexCharts(
-  document.querySelector('#bar-chart'),
-  barChartOptions
+// Create a new instance of ApexCharts for the pie chart
+const pieChart = new ApexCharts(
+  document.querySelector('#pie-chart'),
+  pieChartOptions
 );
 
-// Render the bar chart
-barChart.render();
+// Render the pie chart
+pieChart.render();
+
 
 // AREA CHART
 const areaChartOptions = {
