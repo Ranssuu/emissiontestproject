@@ -4,11 +4,11 @@ const areaChartOptions = {
     series: [
       {
         name: 'Passed', // Series name
-        data: [31, 40, 28, 51, 42, 109, 100], // Data points for the 'Passed' series
+        data: [2, 5, 3, 4, 2, 9, 6], // Data points for the 'Passed' series
       },
       {
         name: 'Failed', // Series name
-        data: [11, 32, 45, 32, 34, 52, 41], // Data points for the 'Failed' series
+        data: [6, 4, 3, 8, 9, 10, 7], // Data points for the 'Failed' series
       },
     ],
     // Chart type and configurations
@@ -129,99 +129,3 @@ const areaChartOptions = {
   
   // Render the area chart
   areaChart.render();
-
-
- // ARC CHART
-const opacity = 1; // Opacity level (0 to 1)
-const angle = 80 * Math.PI * opacity; // Calculate the angle for the circular line
-
-const arcChartOptions = {
-  series: [opacity * 100], // Data points for the arc chart
-  chart: {
-    type: 'radialBar',
-    background: 'transparent',
-    height: 350,
-  },
-  plotOptions: {
-    radialBar: {
-      startAngle: -90,
-      endAngle: angle - Math.PI / 2,
-      hollow: {
-        margin: 0,
-        size: '70%',
-      },
-      track: {
-        background: 'transparent',
-        strokeWidth: '100%',
-        margin: 0,
-      },
-      dataLabels: {
-        showOn: 'always',
-        value: {
-          offsetY: -20,
-          color: '#fff',
-          fontSize: '24px',
-          formatter: function (val) {
-            return `${val}%`;
-          },
-        },
-      },
-    },
-  },
-  fill: {
-    opacity: 1,
-  },
-  stroke: {
-    lineCap: 'round',
-  },
-  labels: ['Opacity'],
-  tooltip: {
-    enabled: false,
-  },
-  responsive: [
-    {
-      breakpoint: 480,
-      options: {
-        chart: {
-          height: 300,
-        },
-        plotOptions: {
-          radialBar: {
-            offsetY: 0,
-            startAngle: -90,
-            endAngle: angle - Math.PI / 2,
-            hollow: {
-              margin: 0,
-              size: '70%',
-            },
-            track: {
-              background: 'transparent',
-              strokeWidth: '100%',
-              margin: 0,
-            },
-            dataLabels: {
-              showOn: 'always',
-              value: {
-                offsetY: -20,
-                color: '#fff',
-                fontSize: '24px',
-                formatter: function (val) {
-                  return `${val}%`;
-                },
-              },
-            },
-          },
-        },
-      },
-    },
-  ],
-};
-
-// Create a new instance of ApexCharts for the arc chart
-const arcChart = new ApexCharts(
-  document.querySelector('#arc-chart'),
-  arcChartOptions
-);
-
-// Render the arc chart
-arcChart.render();
