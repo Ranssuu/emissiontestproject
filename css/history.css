@@ -91,19 +91,17 @@ body {
 }
 
 .main-content {
-    grid-area: main;
     margin-left: 250px;
-    padding: 20px 20px;
-    color: #000; /* Changed text color to black */
+    padding: 20px;
+    color: #000;
 }
 
 .main-content h1 {
     font-size: 24px;
 }
 
-.vehicle-container {
-    height: auto;
-    overflow-y: auto;
+.main-title h2 {
+    color: #fff;
 }
 
 .vehicle-table {
@@ -128,30 +126,27 @@ body {
 
 .invoice {
     background-color: #fff;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
 
 .invoice-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header-content {
     display: flex;
-    align-items: center;
-    justify-content: center; /* Center align the header */
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center items horizontally */
     margin-bottom: 20px;
 }
 
 .header-logo {
-    margin-right: 20px;
-}
-
-.header-logo img {
-    width: 100px;
-    height: auto;
-}
-
-.header-text {
-    flex-grow: 1;
+    flex-shrink: 0; /* Prevent logo from shrinking */
+    margin-right: 10px; /* Add some space between logo and text */
 }
 
 .header-title {
@@ -160,14 +155,55 @@ body {
     margin: 0;
 }
 
+.header-logo img {
+    display: block;
+    width: 100px;
+    height: auto;
+}
+
 .result {
-    margin-left: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
     font-size: 18px;
     color: #000;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .summary {
     text-align: center;
+}
+
+.summary-result {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.summary-result th,
+.summary-result td {
+    border: 1px solid #000;
+    text-align: left;
+    padding: 8px;
+    color: #000;
+    font-weight: 500;
+}
+
+.summary-result th {
+    border-bottom: 1px solid #000;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+.summary-result tbody {
+    background-color: #f9f9f9;
+}
+
+.summary-result tbody tr:nth-child(even) {
+    background-color: #eaeaea;
 }
 
 .print-button {
