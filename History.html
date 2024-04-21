@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Dashboard</title>
-    <link rel="stylesheet" href="CSS/userinfo.css">
+    <title>History</title>
+    <link rel="stylesheet" href="CSS/history.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
 </head>
 
 <body>
@@ -39,7 +40,106 @@
         <div class="main-title">
             <h2>History</h2>
         </div>
+        <div class="invoice" id="invoice">
+            <div class="invoice-header">
+                <div class="header-logo">
+                    <img src="imgs/Logo1x.svg" alt="Logo.png">
+                </div>
+                <div class="header-text">
+                    <h2 class="header-title">Iot Emission Test Kit Result</h2>
+                </div>
+            </div>
+            <div class="vehicle-container">
+                <table class="vehicle-table">
+                    <thead>
+                        <tr>
+                            <th colspan="4">Personal Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Owner Name: </td>
+                            <td>John Lance D. Tumala</td>
+                            <td>Email:</td>
+                            <td>Lanzester@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Mobile Number: </td>
+                            <td>023654788952</td>
+                            <td>Date of Registration:</td>
+                            <td>10/12/2010</td>
+                        </tr>
+                        <tr>
+                            <th colspan="4">Vehicle Details</th>
+                        </tr>
+                        <tr>
+                            <td>Plate No: </td>
+                            <td>NEO 123</td>
+                            <td>Make/Series: </td>
+                            <td>TOYOTA RUSH</td>
+                        </tr>
+                        <tr>
+                            <td>Engine No: </td>
+                            <td>741025896321456987</td>
+                            <td>MV Type:</td>
+                            <td>Car</td>
+                        </tr>
+                        <tr>
+                            <td>Chassis No: </td>
+                            <td>1478523696321456987</td>
+                            <td>Color:</td>
+                            <td>Brown</td>
+                        </tr>
+                        <tr>
+                            <td>Year Model: </td>
+                            <td>2010</td>
+                            <td>Classification: </td>
+                            <td>Private</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="result">
+                <div class="summary">
+                    <H2>Summary</H2>
+                </div>
+                <table class="summary-result">
+                    <thead>
+                        <tr>
+                            <th>Opacity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2.00</td>
+                        </tr>
+                        <tr>
+                            <th>Result</th>
+                        </tr>
+                        <tr>
+                            <td>FAILED</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="print-button">
+                <button id="printButton">Print</button>
+            </div>
+        </div>
     </div>
+
+    <script>
+        document.getElementById("printButton").addEventListener("click", function () {
+            var element = document.getElementById("invoice");
+            html2pdf(element, {
+                margin: 1,
+                filename: 'invoice.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+            });
+        });
+    </script>
 </body>
 
 </html>
