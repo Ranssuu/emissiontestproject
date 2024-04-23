@@ -7,7 +7,7 @@ body {
     background-color: #272727;
 }
 
-.sidebar {
+.history-sidebar {
     background-color: #36353A;
     color: #fff;
     width: 250px;
@@ -18,14 +18,14 @@ body {
     padding-top: 20px;
 }
 
-.sidebar-header {
+.history-sidebar-header {
     display: flex;
     align-items: center;
     padding: 20px;
     border-bottom: 1px solid #fff;
 }
 
-.sidebar-header .fa-user-circle {
+.history-sidebar-header .fa-user-circle {
     margin-right: 10px;
     flex-shrink: 0;
 }
@@ -46,32 +46,32 @@ body {
     display: block;
 }
 
-.sidebar ul {
+.history-sidebar ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-.sidebar ul li {
+.history-sidebar ul li {
     padding: 10px;
     color: gray;
     cursor: pointer;
 }
 
-.sidebar ul li i {
+.history-sidebar ul li i {
     margin-right: 10px;
 }
 
-.sidebar ul li.active {
+.history-sidebar ul li.active {
     background-color: #3C3C4A;
 }
 
-.sidebar ul li a {
+.history-sidebar ul li a {
     text-decoration: none;
     color: #797C8F;
 }
 
-.sidebar ul li:hover {
+.history-sidebar ul li:hover {
     background-color: #444;
 }
 
@@ -104,13 +104,13 @@ body {
     color: #fff;
 }
 
-.vehicle-table {
+.history-vehicle-table {
     width: 100%;
     border-collapse: collapse;
 }
 
-.vehicle-table th,
-.vehicle-table td {
+.history-vehicle-table th,
+.history-vehicle-table td {
     border: 1px solid #000;
     text-align: left;
     padding: 8px;
@@ -118,7 +118,7 @@ body {
     font-weight: 500;
 }
 
-.vehicle-table th {
+.history-vehicle-table th {
     border-bottom: 1px solid #000;
     text-align: center;
     border-right: 1px solid #000;
@@ -139,14 +139,14 @@ body {
 
 .header-content {
     display: flex;
-    align-items: center; /* Align items vertically */
-    justify-content: center; /* Center items horizontally */
+    align-items: center;
+    justify-content: center;
     margin-bottom: 20px;
 }
 
 .header-logo {
-    flex-shrink: 0; /* Prevent logo from shrinking */
-    margin-right: 10px; /* Add some space between logo and text */
+    flex-shrink: 0;
+    margin-right: 10px;
 }
 
 .header-title {

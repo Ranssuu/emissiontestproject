@@ -123,7 +123,7 @@ const areaChartOptions = {
   
   // Create a new instance of ApexCharts for the area chart
   const areaChart = new ApexCharts(
-    document.querySelector('#area-chart'),
+    document.querySelector('#user-area-chart'),
     areaChartOptions
   );
   

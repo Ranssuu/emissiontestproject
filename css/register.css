@@ -30,7 +30,7 @@ a {
     /* Reverse the order of children */
 }
 
-.form-container {
+.register-form-container {
     padding: 50px;
     width: 50%;
     background: linear-gradient(to right, #38383A, #000);
@@ -38,20 +38,20 @@ a {
     border-radius: 60px;
 }
 
-.form-container h2 {
+.register-form-container h2 {
     margin-bottom: 20px;
     font-size: 32px;
 }
 
-.form-container form {
+.register-form-container form {
     display: flex;
     flex-direction: column;
 }
 
-.form-container input[type="text"],
-.form-container input[type="password"],
-.form-container input[type="email"],
-.form-container input[type="tel"] {
+.register-form-container input[type="text"],
+.register-form-container input[type="password"],
+.register-form-container input[type="email"],
+.register-form-container input[type="tel"] {
     background-color: transparent;
     padding: 15px;
     font-size: 18px;
@@ -62,15 +62,15 @@ a {
     color: #fff;
 }
 
-.form-container input[type="text"]:focus,
-.form-container input[type="password"]:focus,
-.form-container input[type="email"]:focus,
-.form-container input[type="tel"]:focus {
+.register-form-container input[type="text"]:focus,
+.register-form-container input[type="password"]:focus,
+.register-form-container input[type="email"]:focus,
+.register-form-container input[type="tel"]:focus {
     outline: none;
     border-bottom: 2px solid #3180F7;
 }
 
-.form-container button {
+.register-form-container button {
     padding: 15px 20px;
     font-size: 18px;
     background-color: #00008B;
@@ -81,7 +81,7 @@ a {
     margin-top: 10px;
 }
 
-.form-container button:hover {
+.register-form-container button:hover {
     opacity: 0.9;
 }
 
@@ -111,7 +111,7 @@ a {
     background: linear-gradient(to right, #A7A8A9, #333333);
 }
 
-.logotextbox {
+.logo-text-box {
     font-size: 32px;
     color: #fff;
     margin-bottom: 10px;

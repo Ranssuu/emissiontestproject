@@ -7,7 +7,7 @@ body {
     background-color: #272727;
 }
 
-.sidebar {
+.user-sidebar {
     background-color: #36353A;
     color: #fff;
     width: 250px;
@@ -18,14 +18,14 @@ body {
     padding-top: 20px;
 }
 
-.sidebar-header {
+.user-sidebar-header {
     display: flex;
     align-items: center;
     padding: 20px;
     border-bottom: 1px solid #fff;
 }
 
-.sidebar-header .fa-user-circle {
+.user-sidebar-header .fa-user-circle {
     margin-right: 10px;
     flex-shrink: 0;
 }
@@ -34,106 +34,106 @@ body {
     font-size: 18px;
 }
 
-.menu-section,
-.other-section {
+.user-menu-section,
+.user-other-section {
     padding: 20px;
 }
 
-.section-title {
+.user-section-title {
     font-weight: bold;
     font-size: 16px;
     margin-bottom: 10px;
     display: block;
 }
 
-.sidebar ul {
+.user-sidebar ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-.sidebar ul li {
+.user-sidebar ul li {
     padding: 10px;
     color: gray;
     cursor: pointer;
 }
 
-.sidebar ul li i {
+.user-sidebar ul li i {
     margin-right: 10px;
 }
 
-.sidebar ul li.active {
+.user-sidebar ul li.active {
     background-color: #3C3C4A;
 }
 
-.sidebar ul li a {
+.user-sidebar ul li a {
     text-decoration: none;
     color: #797C8F;
 }
 
-.sidebar ul li:hover {
+.user-sidebar ul li:hover {
     background-color: #444;
 }
 
-.other-section ul li {
+.user-other-section ul li {
     padding: 10px;
     color: gray;
     cursor: pointer;
 }
 
-.other-section ul li i {
+.user-other-section ul li i {
     margin-right: 10px;
 }
 
-.other-section ul li a {
+.user-other-section ul li a {
     text-decoration: none;
     color: #797C8F;
 }
 
-.main-content {
+.user-main-content {
     grid-area: main;
     margin-left: 250px;
     padding: 20px 20px;
     color: #fff;
 }
 
-.main-content h1 {
+.user-main-content h1 {
     font-size: 24px;
 }
 
-.vehicle-container {
+.user-vehicle-container {
     background-color: #313131;
     height: auto;
     overflow-y: auto;
 }
 
-.vehicle-table {
+.user-vehicle-table {
     width: 100%;
     border-collapse: collapse;
 }
 
-.vehicle-table th,
-.vehicle-table td {
+.user-vehicle-table th,
+.user-vehicle-table td {
     border: 1px solid #5A6ACF;
     text-align: left;
     padding: 8px;
 }
 
-.vehicle-table th {
+.user-vehicle-table th {
     background-color: #313131;
     border-bottom: 1px solid #5A6ACF;
     text-align: center;
     border-right: 1px solid #5A6ACF;
 }
 
-.charts {
+.user-charts {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     margin-top: 60px;
 }
 
-.charts-card {
+.user-charts-card {
     background-color: #313131;
     margin-bottom: 20px;
     padding: 25px;
@@ -142,14 +142,14 @@ body {
     box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
 }
 
-.chart-title {
+.user-chart-title {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 /* Style for History Section */
-.history-section {
+.user-history-section {
     background-color: #313131;
     padding: 25px;
     box-sizing: border-box;
@@ -161,24 +161,24 @@ body {
     scrollbar-color: #444444  #313131; /* Change scrollbar track and thumb colors */
 }
 
-.history-title {
+.user-history-title {
     display: flex;
     align-items: center;
     justify-content: center;
     color: #fff;
 }
 
-.history-container {
+.user-history-container {
     max-height: 80%; /* Allow container to take full height of history section */
     overflow-y: auto; /* Enable vertical scrolling */
 }
 
-.history-list {
+.user-history-list {
     list-style: none;
     padding: 0;
 }
 
-.history-item {
+.user-history-item {
     background-color: #444;
     color: #fff;
     padding: 10px;
@@ -188,31 +188,31 @@ body {
     
 }
 
-.history-item a{
+.user-history-item a{
     justify-content: space-between;
     display: flex;
     
 }
 
-.history-item:hover {
+.user-history-item:hover {
     background-color: #555;
 }
 
-.history-date {
+.user-history-date {
     padding: 0 10px; /* Add padding */
     font-weight: bold;
 }
 
-.history-result {
+.user-history-result {
     padding: 0 10px; /* Add padding */
     color: #00AB57; /* Green for passed, adjust as needed */
 }
 
-.history-item.failed .history-result {
+.user-history-item.failed .user-history-result {
     color: #D50000; /* Red for failed, adjust as needed */
 }
 
-.history-item a {
+.user-history-item a {
     text-decoration: none;
     color: inherit; /* Optionally inherit the color from parent */
 }

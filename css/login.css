@@ -6,7 +6,6 @@ body {
     margin: 0;
 }
 
-
 h1,
 h2,
 h3,
@@ -15,14 +14,14 @@ a {
     font-family: 'Inter', sans-serif;
 }
 
-.container {
+.login-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-.logincontainer {
+.login-content-container {
     border: 3px;
     width: 500px;
     height: 555px;
@@ -33,8 +32,6 @@ a {
     position: relative;
     right: 50px;
 }
-
-
 
 input[type="text"],
 input[type="password"] {
@@ -88,12 +85,11 @@ button[type="submit"] {
     font-size: 16px;
 }
 
-
 button:hover {
     opacity: 0.8;
 }
 
-.logintextbox {
+.login-text-box {
     text-align: start;
     margin: 32px 0 12px 0;
 }
@@ -102,27 +98,27 @@ button:hover {
     padding: 16px;
 }
 
-.registertextbox {
+.register-text-box {
     text-align: center;
     padding: 8px;
 }
 
-.registertextbox a {
+.register-text-box a {
     text-decoration: none;
     color: inherit;
     transition: color 0.3s;
 }
 
-.registertextbox a[href]:hover {
+.register-text-box a[href]:hover {
     color: #0505d4;
     text-decoration: underline;
 }
 
-.registertextbox a:first-child {
+.register-text-box a:first-child {
     font-weight: normal;
 }
 
-.registertextbox a[href] {
+.register-text-box a[href] {
     color: #3180F7;
     font-weight: bold;
 }
@@ -134,7 +130,7 @@ button:hover {
     margin-left: 50px;
 }
 
-.logotextbox {
+.logo-text-box {
     font-size: 32px;
     color: #FFF;
     margin-bottom: 10px;
